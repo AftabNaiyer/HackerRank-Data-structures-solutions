@@ -1,0 +1,10 @@
+vector<int> rotateLeft(int d, vector<int> arr) {
+vector<int> result;
+    for (auto it = arr.begin()+d; it !=arr.end() ; ++it) {
+        result.push_back(*it);
+    }
+    for (auto it=arr.begin(); it !=arr.begin()+d; ++it ) {
+        result.push_back(*it);
+    }
+    return result;
+}
